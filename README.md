@@ -1,5 +1,7 @@
 # pi-clock
 
+![with-clock-initial-setup](https://user-images.githubusercontent.com/4529833/34457864-86ccb7f0-ed8c-11e7-9809-e66df7e1b6d2.jpg)
+
 Install Node.js and npm
  * https://www.godaddy.com/help/install-nodejs-debian-17399
  * ```sudo apt-get install nodejs```      (already installed on raspberry pi 2.4.5)
