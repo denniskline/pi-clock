@@ -1,0 +1,12 @@
+# npm
+node_modules
+
+# Logs
+*.log
+
+# IntelliJ specific files/directories #
+out
+.idea
+*.ipr
+*.iws
+*.iml
