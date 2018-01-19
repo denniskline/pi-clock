@@ -1,0 +1,26 @@
+{
+  "name": "pi-clock",
+  "description": "A clock web-ui running on a pi and a pi 7 touchscreen display",
+  "main": "index.js",
+  "authors": [
+    "Dennis Kline"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "PI",
+    "Clock",
+    "Raspberry"
+  ],
+  "homepage": "https://github.com/denniskline/pi-clock",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "moment": "^2.20.1",
+    "jquery": "^3.2.1"
+  }
+}
