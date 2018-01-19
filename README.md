@@ -3,7 +3,13 @@
 ![with-clock-initial-setup](https://user-images.githubusercontent.com/4529833/34457864-86ccb7f0-ed8c-11e7-9809-e66df7e1b6d2.jpg)
 
 Install Node.js and npm
- * https://www.godaddy.com/help/install-nodejs-debian-17399
+ * nodejs is already installed on rasbian 
+ * If running on ubuntu, an very old version will be installed with apt-get install nodejs)
+ * https://nodejs.org/en/download/package-manager/
+ * ```curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -```
+ * ```sudo apt-get install -y nodejs```
+ * 
+ * https://nodejs.org/en/download/package-manager/
  * ```sudo apt-get install nodejs```      (already installed on raspberry pi 2.4.5)
  * ```sudo apt-get install npm``` 
 
@@ -15,6 +21,9 @@ Setup project
  * ```express --view=pug pi-clock```
  * ```npm install```
  * ```npm install --save-dev nodemon```      (allows file changes without restarting server each time)
+ * ```npm install -g bower```
+ * ```bower init```
+ * ```bower install moment --save```
 
 Run Project
  * ```DEBUG=pi-clock:* npm run devstart```

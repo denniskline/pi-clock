@@ -7,6 +7,8 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+// var clock = require('./public/javascript/clock.js');
+var moment = require('moment');
 
 var app = express();
 
@@ -21,7 +23,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
+app.use('/js/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
+app.use('/js/moment', express.static(__dirname + '/node_modules/moment/'));
 
 app.use('/', index);
 app.use('/users', users);
