@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
+var weather = require('./routes/weather');
 // var clock = require('./public/javascript/clock.js');
 //var moment = require('moment');
 
@@ -24,11 +24,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/js/jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
+app.use('/js/angular', express.static(__dirname + '/node_modules/angular/'));
 app.use('/js/moment', express.static(__dirname + '/node_modules/moment/'));
 
 app.use('/', index);
-app.use('/users', users);
+app.use('/weather', weather);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
