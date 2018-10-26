@@ -28,6 +28,10 @@ Setup project
 Run Project
  * ```DEBUG=pi-clock:* npm run devstart```
 
+OpenWeatherMap
+ * Create an account: https://openweathermap.org/api
+ * Track down API Key: https://home.openweathermap.org/api_keys
+ * Find city id: http://bulk.openweathermap.org/sample/city.list.json.gz
 
 Clock:
  * Analog: https://codepen.io/nDav/pen/zvPJem
